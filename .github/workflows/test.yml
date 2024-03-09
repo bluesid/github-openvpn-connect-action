@@ -3,15 +3,7 @@ name: VPN Connect Test
 on:
   workflow_dispatch:
 jobs:
-  show-context:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Show github context object
-        run: echo $JSON
-        env:
-          JSON: ${{ toJSON(github) }}
-
-  test:
+  build:
     runs-on: ubuntu-latest
     name: Typical Usage of OpenVPN
     steps:
