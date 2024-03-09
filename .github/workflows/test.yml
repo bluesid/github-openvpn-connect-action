@@ -1,14 +1,7 @@
-name: Test
+name: VPN Connect Test
 
 on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - README.md
-  pull_request:
-
-
+  workflow_dispatch:
 jobs:
   show-context:
     runs-on: ubuntu-latest
