@@ -18,4 +18,4 @@ jobs:
         with:
           config_file: .github/workflows/client.ovpn
       - name: Check if connected
-        run: curl -v ${{ secrets.TARGET_URL }}
+        run: curl ${{ secrets.TARGET_URL }}
